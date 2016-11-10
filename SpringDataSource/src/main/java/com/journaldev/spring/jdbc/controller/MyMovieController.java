@@ -35,7 +35,7 @@ public class MyMovieController {
 		logger.info("Start getMovies.");
 		List<MyMovies> movieList = new ArrayList<MyMovies>();
 		//JDBC Code - Start
-		String query = "select * from my_movies";
+		String query = "select * from my_movies order by title asc";
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 
 		List<Map<String,Object>> movieRows = jdbcTemplate.queryForList(query);

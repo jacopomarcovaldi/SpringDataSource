@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Film</h2>
+  <p>Lista film</p>
+  <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Cover</th>
+        <th>Titolo</th>
+        <th>Link Imdb</th>
+        <th>Data Inserimento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="movie in result">
+        <td>{{$index}}</td>
+        <td><img alt="" src="{{movie.cover_link}}" /></td>
+        <td>{{movie.title}}</td>
+        <td><a href="{{movie.imdb_link}}" target="_black"></a></td>
+        <td>{{movie.insert_date}}</td>
+     </tr>
+    </tbody>
+  </table>
+  </div>
+</div>

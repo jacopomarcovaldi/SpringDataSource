@@ -1,0 +1,439 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * INFOGROUP: Il tema di base (Modern Business) è stato personalizzato ulteriormente. Il file "modern-business.css" è stato rinominato in "meyer.css" (questo file) e sono state aggiunte delle regole. Vedere commento a circa riga 100. A.Pedroso (08-2016).
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+    background-color: #fff!important;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.tales {
+  width: 100%;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
+
+/*!
+ ************* INFOGROUP: Regole personalizzate per il Meyer. ***************
+ */
+ body {
+    padding-top: 130px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* -------- navbar --------- */
+
+ .navbar-default {
+	background-color: #fff;
+	border-color: #e7e7e7
+ }
+ .navbar-brand {
+    float: left;
+    height: 130px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #8ab71e; /*colore secondario (verde) */
+    background-color: transparent
+}
+
+.navbar-default .navbar-text {
+    color: #00135f; /*colore primario (blu) */
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #00135f; /*colore primario (blu) */
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #8ab71e; /*colore secondario (verde) */
+    background-color: transparent
+}
+
+/* -- posizionamento del menù in basso in schermi grandi (AP: se cambia la larghezza del menù questo valore è da aggiustare per evitare del clipping) -- */
+@media (max-width: 989px) {
+  .navbar-right {
+	position:relative;
+    top: 0;
+  }
+}
+@media (min-width: 990px) {
+  .navbar-right {
+	position:relative;
+    top: 80px;
+  }
+}
+
+/* -- navbar fancy login --*/
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #333;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+
+/* -------- carousel --------- */
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center top;
+    background-size: cover;
+}
+.carousel-caption a {
+	color: #fff;
+	text-decoration: none;
+}
+/* -------- header --------- */
+
+.page-header {
+	color: #00135f; /*colore primario (blu) */
+}
+
+/* -------- home panels (progetti)  --------- */
+
+.panel-default > .panel-heading {
+    color: #fff;
+    background-color: #00135f; /*colore primario (blu) */
+    border-color: #00135f; /*colore primario (blu) */
+	margin: -1px -1px 0 -1px; /*per coprire il bordo grigio del pannello */
+	padding: 5px 15px;
+}
+
+/* ------ raccolta evento -------- */
+.raccoltaEvento {
+	background-color: #8ab71e; /*colore secondario (verde) */
+	margin-left: -15px;
+	margin-right: -15px;
+	padding: 15px 0;
+	color: #fff;
+}
+
+/* -------- btn-default (pulsante originale) --------- */
+
+.btn-default {
+    color: #00135f; /*colore primario (blu) */
+    background-color: #fff;
+    border-color: #00135f; /*colore primario (blu) */
+}
+
+.btn-default.focus, .btn-default:focus {
+    color: #8ab71e; /*colore secondario (verde) */
+    background-color: #E2FDCB;
+    border-color: #8ab71e; /*colore secondario (verde) */
+}
+
+.btn-default:hover {
+    color: #8ab71e; /*colore secondario (verde) */
+    background-color: #fff;
+    border-color: #8ab71e; /*colore secondario (verde) */
+}
+
+.btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
+    color: #8ab71e; /*colore secondario (verde) */
+    background-color: #E2FDCB;
+    border-color: #8ab71e; /*colore secondario (verde) */
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover,
+.btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover,
+.open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:hover {
+    color: #8ab71e; /*colore secondario (verde) */
+    background-color: #fff;
+    border-color: #8ab71e; /*colore secondario (verde) */
+}
+
+/* -------- btn-primary (pieno con colore primario) --------- */
+
+.btn-primary {
+    color: #fff;
+    background-color: #00135f; /*colore primario (blu) */
+    border-color: #00135f; /*colore primario (blu) */
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #2141c0;
+    border-color: #2141c0;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2141c0;
+    border-color: #2141c0;
+}
+
+.btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover,
+.btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
+.open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #204d74;
+    border-color: #122b40
+}
+
+.btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
+    background-image: none
+}
+
+.btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover,
+.btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:hover {
+    background-color: #337ab7;
+    border-color: #2e6da4
+}
+
+/* -------- btn-secondary (pieno con colore secondario) --------- */
+
+.btn-secondary {
+    color: #fff;
+    background-color: #8ab71e; /*colore secondario (verde) */
+    border-color: #8ab71e; /*colore secondario (verde) */
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+    color: #fff;
+    background-color: #a7dd24;
+    border-color: #a7dd24;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #a7dd24;
+    border-color: #a7dd24;
+}
+
+.btn-secondary.active, .btn-secondary:active, .open > .dropdown-toggle.btn-secondary {
+    color: #fff;
+    background-color: #a7dd24;
+    border-color: #a7dd24
+}
+
+.btn-secondary.active.focus, .btn-secondary.active:focus, .btn-secondary.active:hover,
+.btn-secondary:active.focus, .btn-secondary:active:focus, .btn-secondary:active:hover,
+.open > .dropdown-toggle.btn-secondary.focus, .open > .dropdown-toggle.btn-secondary:focus,
+.open > .dropdown-toggle.btn-secondary:hover {
+    color: #fff;
+    background-color: #648514;
+    border-color: #648514
+}
+
+.btn-secondary.active, .btn-secondary:active, .open > .dropdown-toggle.btn-secondary {
+    background-image: none
+}
+
+.btn-secondary.disabled.focus, .btn-secondary.disabled:focus, .btn-secondary.disabled:hover,
+.btn-secondary[disabled].focus, .btn-secondary[disabled]:focus, .btn-secondary[disabled]:hover,
+fieldset[disabled] .btn-secondary.focus, fieldset[disabled] .btn-secondary:focus,
+fieldset[disabled] .btn-secondary:hover {
+    background-color: #999;
+    border-color: #999
+}
+
+/* -------- the fabulous FUNDMETER -------- */
+.fundmeter {
+	min-height: 50px;
+	margin-left: -15px; /* per coprire il padding del panel-body */
+	margin-right: -15px; /* per coprire il padding del panel-body */
+	margin-bottom: 15px;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.fundmeter .progress {
+	border-radius: 20px;
+	margin-bottom: 5px;
+}
+.fundmeter .progress-bar {
+	background-color: #8ab71e; /*colore secondario (verde) */
+}
+.fundmeter .legenda h6 {
+	margin: 2px 0;
+	font-weight: 400;
+	color: #666;
+}
+.fundmeter .legenda p {
+	font-weight: 500;
+}
+
+/* -------- video --------- */
+
+#video {
+	margin-top: 10px;
+}
+
+/* -------- forms --------- */
+
+.controls input[type="radio"] + span {
+	margin-left: 5px;
+	margin-right: 15px;
+}
+
+/* -------- footer --------- */
+
+footer {
+	color: #fff;
+	background-color: #999;
+	padding: 15px;
+}
+
+/* -------- EXTRA HELPERS --------- */
+/* -------- colori --------- */
+.colore-primario {
+	 color: #00135f; /*colore primario (blu) */
+}
+.colore-secondario {
+	 color: #8ab71e; /*colore secondario (verde) */
+}
+.colore-social {
+	 color: #337ab7;
+}
+/* -------- padding --------- */
+padding-sm {
+	padding: 5px;
+}
+padding-md {
+	padding: 10px;
+}
+padding-lg {
+	padding: 15px;
+}
